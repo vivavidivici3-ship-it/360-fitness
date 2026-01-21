@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Colors */
+.red { color: #e10600; }
+.yellow { color: #ffd100; }
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #000;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header nav a {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header nav a:hover {
+  color: #ffd100;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+}
+
+.hero p {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+/* Buttons */
+.btn {
+  background: #e10600;
+  color: #ffd100;
+  border: none;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section.dark {
+  background: #111;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: #e10600;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card,
+.price-card {
+  background: #000;
+  padding: 30px;
+  width: 220px;
+  border: 1px solid #333;
+  transition: transform 0.3s;
+}
+
+.card:hover,
+.price-card:hover {
+  transform: translateY(-8px);
+}
+
+.highlight {
+  border: 2px solid #ffd100;
+}
+
+.price {
+  margin: 15px 0;
+  color: #ffd100;
+}
+
+/* Why list */
+.why {
+  list-style: none;
+}
+
+.why li {
+  margin: 10px 0;
+}
+
+/* Contact */
+.contact-form {
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .header nav {
+    display: none;
+  }
+}
